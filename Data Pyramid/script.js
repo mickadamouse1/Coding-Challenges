@@ -4,11 +4,9 @@ function pyramid(n) {
   var arrPyramid = []; // the pyramid size is set
   var arrData = [];
   if (n === 0) return arrPyramid; // if the size is 0, just return an empty array
-  var noom = 0;
   for (var i = 1; i <= n; i++) {
     var arr = new Array(i);
     for (var x = 0; x < arr.length; x++) {
-      noom += 1;
       arr[x] = Math.ceil(Math.random() * 9);
     }
     arrPyramid.push(arr);
